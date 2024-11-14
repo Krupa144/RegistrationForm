@@ -18,7 +18,6 @@ public class RegistrationViewModel
     [Required(ErrorMessage = "Hasło jest wymagane.")]
     [MinLength(8, ErrorMessage = "Hasło musi mieć przynajmniej 8 znaków.")]
     [DataType(DataType.Password)]
-    [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$", ErrorMessage = "Hasło musi zawierać przynajmniej jedną cyfrę, jedną dużą literę i jedną małą literę.")]
     public string Password { get; set; }
 
     [Required(ErrorMessage = "Potwierdzenie hasła jest wymagane.")]
